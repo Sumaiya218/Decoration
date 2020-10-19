@@ -75,91 +75,69 @@
                       <li>PROJECTS</li>
                   </ul>
               </div>
-              <div class="projects">
-                <ul class="d-flex justify-content-center">
-                  <li class=" py-1 mb-3 mt-4"><a id="projects" class=" active py-2 px-4 m-3 " href="#">ALL PROJECTS</a></li>
-                  <li class="py-1 mb-3 mt-4"><a id="residential" class="p-4 m-3" href="#">RESIDENTIAL</a></li>
-                  <li class="py-1 mb-3 mt-4"><a id="hospitaly" class="p-4 m-3" href="#">HOSPITALY</a></li>
-                  <li class="py-1 mb-3 mt-4"><a id="office" class="p-4 m-3" href="#">OFFICE</a></li>
-                  <li class="py-1 mb-3 mt-4"><a id="commercial" class="p-4 m-3" href="#">COMMERICAL</a></li>
-                </ul>
-                <div class="row no-gutters">
-  
-                  <div class="item col-md-4 position-relative overflow-hidden">
-                    <img class="img-fluid" src="images/pr-1.jpg">
-                    <div class="caption w-100 position-absolute">
+
+              <div class="projects"> 
+
+                <div class="button-group filter-button-group py-4 px-5">
+                  <button id="projects" class="active" data-filter="*">ALL PROJECTS</button>
+                  <button id="residential" data-filter=".RESIDENTIAL">RESIDENTIAL</button>
+                  <button id="hospitaly" data-filter=".HOSPITALY">HOSPITALY</button>
+                  <button id="office" data-filter=".OFFICE">OFFICE</button>
+                  <button id="commercial" data-filter=".COMMERCIAL">COMMERCIAL</button>
+                </div>       
+                
+                <div class="projects-items grid row no-gutters">              
+                  <div id="item1" class=" RESIDENTIAL col-md-4 ">
+                     <div class="item position-relative overflow-hidden">
+                     <img class="img-fluid" src="images/pr-1.jpg">
+                     <div class="caption w-100 position-absolute">
                       <p class="text-center">Eco Green Interior</p>
                     </div>
                   </div>
-                  <div class="item col-md-4 position-relative overflow-hidden">
-                    <img class="img-fluid" src="images/pr-5.jpg">
-                    <div class="caption w-100 position-absolute">
+                  </div>
+                  <div id="item2" class=" HOSPITALY * col-md-4">
+                    <div class="item position-relative overflow-hidden">
+                      <img class="img-fluid" src="images/pr-5.jpg">
+                      <div class="caption w-100 position-absolute">
                       <p class="text-center">modern elegance suite</p>
                     </div>
                   </div>
-                  <div class="item col-md-4 position-relative overflow-hidden">
-                    <img class="img-fluid" src="images/pr-6.jpg">
-                    <div class="caption w-100 position-absolute">
-                      <p class="text-center">apartment renovation </p>
+                  </div>
+                  <div id="item3" class=" HOSPITALY * col-md-4">
+                      <div class="item  position-relative overflow-hidden">
+                        <img class="img-fluid" src="images/pr-6.jpg">
+                        <div class="caption w-100 position-absolute">
+                        <p class="text-center">apartment renovation </p>
+                        </div>
+                      </div>
+                  </div>
+                  <div id="item4" class=" RESIDENTIAL col-md-4">
+                    <div class="item position-relative overflow-hidden">
+                        <img class="img-fluid" src="images/pr-7.jpg">
+                        <div class="caption w-100 position-absolute">
+                        <p class="text-center">youtube video</p>
+                        </div>
                     </div>
                   </div>
-                  <div class="item col-md-4 position-relative overflow-hidden">
-                    <img class="img-fluid" src="images/pr-7.jpg">
-                    <div class="caption w-100 position-absolute">
-                      <p class="text-center">youtube video</p>
-                    </div>
-                  </div>
-                  <div class="item col-md-4 position-relative overflow-hidden">
-                    <img class="img-fluid" src="images/pr-8.jpg">
-                    <div class="caption w-100 position-absolute">
+                  <div id="item5" class=" OFFICE col-md-4">
+                    <div class="item position-relative overflow-hidden">
+                      <img class="img-fluid" src="images/pr-8.jpg">
+                      <div class="caption w-100 position-absolute">
                       <p class="text-center">vimeo video</p>
+                      </div>
                     </div>
                   </div>
-                  <div class="item col-md-4 position-relative overflow-hidden">
-                    <img class="img-fluid" src="images/pr-9.jpg">
-                    <div class="caption w-100 position-absolute">
-                      <p class="text-center">restaurant in texas</p>
-                    </div>
-                  </div>
-
-                  <div class="item col-md-4 position-relative overflow-hidden">
-                    <img class="img-fluid" src="images/pr-10.jpg">
-                    <div class="caption w-100 position-absolute">
-                      <p class="text-center">SUMMER HOUSE</p>
-                    </div>
-                  </div>
-                  <div class="item col-md-4 position-relative overflow-hidden">
-                    <img class="img-fluid" src="images/pr-11.jpg">
-                    <div class="caption w-100 position-absolute">
-                      <p class="text-center">office on space</p>
-                    </div>
-                  </div>
-                  <div class="item col-md-4 position-relative overflow-hidden">
-                    <img class="img-fluid" src="images/pr-12.jpg">
-                    <div class="caption w-100 position-absolute">
-                      <p class="text-center">luxury living room</p>
-                    </div>
-                  </div>
-                  <div class="item col-md-4 position-relative overflow-hidden">
-                    <img class="img-fluid" src="images/pf (10).jpg">
-                    <div class="caption w-100 position-absolute">
-                      <p class="text-center">cozy bedroom</p>
-                    </div>
-                  </div>
-                  <div class="item col-md-4 position-relative overflow-hidden">
-                    <img class="img-fluid" src="images/pf (11).jpg">
-                    <div class="caption w-100 position-absolute">
-                      <p class="text-center">classic furnishing</p>
-                    </div>
-                  </div>
-                  <div class="item col-md-4 position-relative overflow-hidden">
-                    <img class="img-fluid" src="images/pr-4.jpg">
-                    <div class="caption w-100 position-absolute">
-                      <p class="text-center">restaurant in cannes</p>
+                  <div id="item6" class="item COMMERCIAL col-md-4">
+                    <div class="item position-relative overflow-hidden">
+                       <img class="img-fluid" src="images/pr-9.jpg">
+                       <div class="caption w-100 position-absolute">
+                       <p class="text-center">restaurant in texas</p>
+                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
               <div class="get p-5 d-flex justify-content-center align-items-center">
                 <a class="btn px-5 py-2 m-2">GET QUOTATION <i class=" ml-1 fas fa-angle-right "></i></a>
               </div>
