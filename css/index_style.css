@@ -332,27 +332,35 @@ nav .icons i:hover{
 .owl-theme .owl-dots .owl-dot.active span{
     background-color:#E9AB03 !important;    
 }
-.contact .part{
+.contact .part {
     width: 45%;
     font-size: 13px;
 }
-.contact .part h3{
+.home .part{
+    font-size: 13px;
+}
+.contact .part h3 {
     color: #333;
     font-size: 24px;
 }
-.contact .part span{
+.contact .part span {
     border-bottom: solid 1px #eee;
     width: 90%;
     display: block;
     padding: 8px 0px;
 }
-.contact .part p{
+.home .part span{
+    border-bottom: solid 1px #eee;
+    display: block;
+    padding: 8px 0px;
+}
+.contact .part p , .home .part p{
     line-height: 1.7em;
 }
-.contact .part span, .contact .part p{
+.contact .part span, .contact .part p ,.home .part span, .home .part p{
     color: #606060;
 }
-.contact .part span strong{
+.contact .part span strong , .home .part span strong{
     color:#FAB702;
     width: 60px;
     display: inline-block;
@@ -395,27 +403,27 @@ footer .scroll a i{
     letter-spacing: 5px;
     background-position:center;
 }
-.ser-header h2 , .pro-header h2 , .about-header h2 , .blog-header h2{    
+.ser-header h2 , .pro-header h2 , .about-header h2 , .blog-header h2 , .con-header h2{    
     color: #222;
     position: absolute;
     top: 45%;
     left: 70px;
 }
-.ser-header ul , .pro-header ul , .about-header ul , .blog-header ul{
+.ser-header ul , .pro-header ul , .about-header ul , .blog-header ul , .con-header ul{
     position: absolute;
     top: 47%;
     right: 70px;
     font-size: 10px;
 }
-.ser-header ul li , .pro-header ul li , .about-header ul li , .blog-header ul li{
+.ser-header ul li , .pro-header ul li , .about-header ul li , .blog-header ul li , .con-header ul li{
     list-style: none;
     display:inline-block;
 }
-.ser-header ul li a , .pro-header ul li a , .about-header ul li a , .blog-header ul li a{
+.ser-header ul li a , .pro-header ul li a , .about-header ul li a , .blog-header ul li a , .con-header ul li a{
     color: #fab702;
     text-decoration: none;
 }
-.ser-header ul li a:hover , .pro-header ul li a:hover , .about-header ul li a:hover , .blog-header ul li a:hover{
+.ser-header ul li a:hover , .pro-header ul li a:hover , .about-header ul li a:hover , .blog-header ul li a:hover , .con-header ul li a:hover{
     color: #f8f8f8;
 }
 .design .item h3{
@@ -584,7 +592,35 @@ footer .scroll a i{
     background-color: white;
     border-color:#FAB702;
 }
-
+.con-header{
+    background-image: url(../images/subheader-6-sn.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 320px;
+    position: relative;
+    letter-spacing: 5px;
+    background-position:center;
+}
+.home .rooms input{
+    background-color: #F5F5F5;
+    margin-bottom: 22px;
+    padding: 15px;
+}
+.home .rooms textarea{
+    background-color: #F5F5F5;
+}
+.home .rooms button{
+    color: #eceff3;
+    border: solid 1px rgba(255,255,255,.2);
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 12px;
+}
+.home .rooms button:hover{
+    background-color: #FAB702;
+    color: #222;
+    border-color: #222;
+}
 
 
 
