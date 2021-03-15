@@ -1,6 +1,5 @@
 *{
     font-family: "open sans";
-    box-sizing: border-box;
     font-weight: 400;
 }
 .owl-next span , .owl-prev span {
@@ -15,69 +14,59 @@
 h2{
     font-family: "Dosis";
 }
+/* ----------------------------------------------- Styling of index.html ----------------------------------------- */
+
+/* styling of navbar*/
 nav{
-    height: 690px;
     background-color: #F9F9F9;
-}
-.navbar{
-    display: block;
-}
-.navbar ul{
-    display: block;
 }
 .navbar ul li{
     opacity: 0.6;
     font-size: 14px;
-    line-height: 1.5;
     letter-spacing: 3px;
 }
 .navbar ul li:hover{
     color: #000000;
 }
-.navbar hr{
-    box-sizing: content-box;
-    margin: 10px;
-    width: 280px;
-}
-nav .icons i{
+nav  i{
     opacity: 0.6;
     padding: 10px;
     color: #333;
 }
-nav .icons i:hover{
+nav i:hover{
     color: black;
 }
+nav img{
+    width: 80px;
+}
+/* styling of .home section */
 .home{
     right: 0;
 }
 .home h2{
     font-weight: 500;
 }
-
+/* ------- styling of .hom-header section ------- */
 .hom-header{
     background-image: url("../images/download.jpg") ;
     background-size: cover;
     height: 630px;
     background-attachment: fixed;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .hom-header h2{
     letter-spacing: 25px;
     color: #222 !important;
-    position: absolute;
-    top: 45%;
-    left: 18%;
     font-size: 40px;
 }
 .hom-header #head2 , .hom-header #head3 {
     display: none;
 }
-
+/* ------- styling of .WELCOME section ------- */
 .WELCOME {
     background-color: #F5F5F5;
-}
-.WELCOME img , .award img {
-    height: 550px;
 }
 .WELCOME .description{
     animation: fadeInRight 1s 0.2s;
@@ -94,6 +83,8 @@ nav .icons i:hover{
 .WELCOME .description .active , .award .description .active{
     font-size: 13px;
 }
+
+/* ------- styling of .what-we-do section ------- */
 .what-we-do{
     overflow: hidden;
 }
@@ -127,6 +118,8 @@ nav .icons i:hover{
 .what-we-do .items .design p{
     font-size: 13px;
 }
+
+/* ------- styling of .view section ------- */
 .view , .get , .talk{
     background-color:#FAB702;   
 }
@@ -150,6 +143,8 @@ nav .icons i:hover{
     background-color: #000000;
     color: #FAB702 !important;
 }
+
+/* ------- styling of .process section ------- */
 .process{
     background-color: #F5F5F5;
 }
@@ -163,24 +158,17 @@ nav .icons i:hover{
     width: 300px;
     background-color: #E5E5E5;
 }
-.process ul{
-    list-style: none;
-}
-.process ul li{
-    width: 180px;
-    height: 180px;
-    background-color:  #FAB702;;
-}
-.process ul li:hover{
+.process .steps div a:hover{
     cursor: pointer;
     background-color: #222222;
 }
-.process ul li:hover a {
+.process .steps div a:hover {
     color:#FAB702 ;
     line-height: 175px;
 }
-.process ul li a{
+.process .steps div a{
     color: #222;
+    background-color:  #FAB702;
     font-weight: bold;
     text-decoration: none;
     line-height: 180px;
@@ -193,7 +181,7 @@ nav .icons i:hover{
     background-color:#F5F5F5;  
     line-height: 180px;
 }
-.process .active:hover a{
+.process .active:hover{
     color: #222;
 }
 .process .description{
@@ -201,6 +189,8 @@ nav .icons i:hover{
     color: #6c757d;
     border-top: 1px solid #999;
 }
+
+/* ------- styling of .projects section ------- */
 .projects{
     overflow: hidden;
 }
@@ -210,9 +200,6 @@ nav .icons i:hover{
 .projects ul li a{
     text-decoration:none;
     color: #222;
-}
-.projects .button-group{
-    margin-left: 90px;
 }
 .projects button{
     background-color: white;
@@ -263,6 +250,8 @@ nav .icons i:hover{
 .projects .item:hover .caption{
     opacity: 1;
 }
+
+/* ------- styling of .customer section ------- */
 .customer{
     background-image: url(../images/bg-2.jpg);
     background-position: center;
@@ -332,8 +321,9 @@ nav .icons i:hover{
 .owl-theme .owl-dots .owl-dot.active span{
     background-color:#E9AB03 !important;    
 }
+
+/* ------- styling of .contact section ------- */
 .contact .part {
-    width: 45%;
     font-size: 13px;
 }
 .home .part{
@@ -366,6 +356,8 @@ nav .icons i:hover{
     display: inline-block;
     font-weight: bold !important;
 }
+
+/* ------- styling of .footer section ------- */
 footer{
     font-size: 13px;
 }
@@ -380,7 +372,7 @@ footer .icons i {
 footer .icons i:hover{
     background-color: #FAB702;
 }
-footer .scroll{
+.scroll{
     bottom: 40px;
     width: 32px;
     right: 40px;
@@ -390,7 +382,7 @@ footer .scroll{
     border-radius: 2px;
     background-color: #FAB702;
 }
-footer .scroll a i{
+.scroll a i{
     font-size: 13px;
     color: #222;
 }
@@ -399,21 +391,11 @@ footer .scroll a i{
     background-size: cover;
     background-attachment: fixed;
     height: 320px;
-    position: relative;
     letter-spacing: 5px;
     background-position:center;
-}
-.ser-header h2 , .pro-header h2 , .about-header h2 , .blog-header h2 , .con-header h2{    
-    color: #222;
-    position: absolute;
-    top: 45%;
-    left: 70px;
-}
-.ser-header ul , .pro-header ul , .about-header ul , .blog-header ul , .con-header ul{
-    position: absolute;
-    top: 47%;
-    right: 70px;
-    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .ser-header ul li , .pro-header ul li , .about-header ul li , .blog-header ul li , .con-header ul li{
     list-style: none;
@@ -523,9 +505,11 @@ footer .scroll a i{
     background-size: cover;
     background-attachment: fixed;
     height: 320px;
-    position: relative;
     letter-spacing: 5px;
     background-position:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .rooms .room img {
   border-bottom: 5px solid #FAB702;
@@ -600,6 +584,9 @@ footer .scroll a i{
     position: relative;
     letter-spacing: 5px;
     background-position:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .home .rooms input{
     background-color: #F5F5F5;
@@ -622,8 +609,30 @@ footer .scroll a i{
     border-color: #222;
     letter-spacing: 1.8px;
 }
+@media only screen and (max-width:768px){
+    .projects button{
+        margin-left: 0px;
+    }
+    footer .icons{
+        text-align: left !important;
+    }
+}
+@media only screen and (max-width :585px){
+    .hom-header h2{
+        font-size: 26px;
+        letter-spacing: 15px;
+    }
+    .projects .button-group , .projects .button-group button{
+        display: block !important;
+    }
+    .view button , .get button , .talk button , .get a{
+        padding: 5px 10px !important;
+    }
+    .rooms .pages ul li{
+        margin-bottom: 35px;
+    }
 
-
+}
 
 
 
